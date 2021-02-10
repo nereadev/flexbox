@@ -3,17 +3,15 @@ body {
   padding: 0;
   margin: 0;
 }
+
 section {
   display: flex;
 }
 
-p {
+div {
   margin: 0;
   height: 100vh;
   width: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 section > :first-child {
@@ -34,6 +32,22 @@ section > :nth-child(4) {
 
 section > :nth-child(5) {
     background-color: #077;
+}
+
+p {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    transform: rotate(0deg);
+    transition: transform 5s;
+}
+
+p:hover {
+    transform: rotate(360deg);
 }
 
 
